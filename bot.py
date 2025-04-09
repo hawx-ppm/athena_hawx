@@ -1,19 +1,45 @@
-from flask import Flask, request
-import threading
-import os
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, ConversationHandler, filters, ContextTypes, JobQueue
-from datetime import datetime, time, timedelta
 import logging
-import json
-from pathlib import Path
+from telegram import Update
+from telegram.ext import (
+    Application,
+    CommandHandler,
+    MessageHandler,
+    filters,
+    ContextTypes,
+)
+from decouple import config
+import sqlite3
+from threading import Thread
+from flask import Flask
+import os
 
-# Configuração do bot
-TOKEN = "6660083240:AAHUat12WWo72D9PZw_d2E6RpSK1QTlKHM4"
-WEBHOOK_URL = "https://athena-hawx-bot.onrender.com/" + TOKEN
+# Configurações
+TOKEN = config("6660083240:AAHUat12WWo72D9PZw_d2E6RpSK1QTlKHM4")
+PORT = int(config("PORT", 5000))
+APP_NAME = config("APP_NAME", "")  # Para webhook (opcional)
 
 # Configuração do logging
-logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+)
+logger = logging.getLogger(__name__)
+
+# Health Check (Flask em thread separada)
+def run_flask_app():
+    app = Flask(__name__)
+    @app.route("/")
+    def health_check():
+        return "🤖 Bot ONLINE - /start deve funcionar!", 200
+    app.run(host="0.0.0.0", port=PORT)
+
+# Handlers
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Responde ao comando /start"""
+    await update.message.reply_text("Olá! Eu sou o Athena-Hawx. Como posso ajudar? 👋")
+
+async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Responde ao comando /help"""
+    await update.message.reply_text("Aqui vai a ajuda...")
 
 # Estados da conversa
 MENU_PRINCIPAL, MENU_ALERTA, NOME_ALERTA, DATA_ALERTA, MENSAGEM_ALERTA, RECORRENCIA_ALERTA, DEFINIR_RECORRENCIA, DEFINIR_HORARIO, DEFINIR_HORARIO_PERSONALIZADO, MENU_INFORMACOES, HABILIDADES_INICIAIS, ESCOLHER_GENERO, ESCOLHER_FUNCAO_PRINCIPAL, ESCOLHER_FUNCAO_SECUNDARIA, EVENTOS_GENERO, ESCOLHER_EVENTO = range(16)
@@ -755,6 +781,27 @@ def main() -> None:
         port=10000,
         webhook_url=WEBHOOK_URL
     )
+
+if __name__ == "__main__":
+    main()
+
+def main():
+    """Inicia o bot"""
+    # Inicia o Flask em thread separada
+    flask_thread = Thread(target=run_flask_app)
+    flask_thread.daemon = True
+    flask_thread.start()
+
+    # Configura a aplicação do bot
+    application = Application.builder().token(TOKEN).build()
+
+    # Registra os comandos
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CommandHandler("help", help))
+    # ... (registre outros handlers) ...
+
+    # Inicia o bot
+    application.run_polling()  # Ou use webhook se preferir
 
 if __name__ == "__main__":
     main()

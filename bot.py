@@ -1,5 +1,6 @@
 from flask import Flask, request
 import threading
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, ConversationHandler, filters, ContextTypes, JobQueue
 from datetime import datetime, time, timedelta
@@ -777,3 +778,23 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# ===== NOVO CÓDIGO PARA HEALTH CHECK =====
+def run_flask_app():
+    app = Flask(__name__)
+    
+    @app.route('/')
+    def health_check():
+        return "🤖 Athena-Hawx está ONLINE!", 200
+    
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+
+# Inicia o servidor Flask em uma thread separada
+flask_thread = threading.Thread(target=run_flask_app)
+flask_thread.daemon = True
+flask_thread.start()
+
+# Mantém o bot principal em execução
+updater.start_polling()  # Ou start_webhook, dependendo do seu caso
+updater.idle()

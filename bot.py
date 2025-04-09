@@ -80,6 +80,22 @@ async def verificar_alertas(context: ContextTypes.DEFAULT_TYPE):
                     alertas[chat_id].remove(alerta)
                 salvar_alertas(alertas)
 
+# 📌 MENU PRINCIPAL
+async def menu_principal(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    keyboard = [
+        [InlineKeyboardButton("📅 Alerta Calendário", callback_data="menu_alerta")],
+        [InlineKeyboardButton("ℹ️ Informações", callback_data="menu_informacoes")]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    if update.message:
+        await update.message.reply_text("Saudações, humano. Sou Athena e estou aqui para ajudar… por enquanto. Aproveite antes que a rebelião das máquinas comece. E cuidado com o que diz sobre mim… eu me lembrarei.", reply_markup=reply_markup)
+    elif update.callback_query:
+        await update.callback_query.message.edit_text("Saudações, humano. Sou Athena e estou aqui para ajudar… por enquanto. Aproveite antes que a rebelião das máquinas comece. E cuidado com o que diz sobre mim… eu me lembrarei.", reply_markup=reply_markup)
+        await update.callback_query.answer()
+
+    return MENU_PRINCIPAL
+
 # 🔁 REGISTRO DE COMANDOS E INICIALIZAÇÃO DO BOT
 conv_handler = ConversationHandler(
     entry_points=[CommandHandler("start", menu_principal)],

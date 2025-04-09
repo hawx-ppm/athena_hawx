@@ -736,14 +736,15 @@ async def handle_callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # 📌 CONFIGURAÇÃO DO BOT
 def main() -> None:
     global alertas
-    alertas = carregar_alertas()  # Carrega os alertas do arquivo JSON ao iniciar o bot
+    alertas = carregar_alertas()
 
     application = Application.builder().token(TOKEN).build()
 
-    # Agenda a verificação de alertas a cada minuto
+    # Agenda a verificação de alertas
     job_queue = application.job_queue
     job_queue.run_repeating(verificar_alertas, interval=60.0, first=0.0)
 
+    # Handlers
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("start", menu_principal)],
         states={
@@ -768,7 +769,11 @@ def main() -> None:
     )
 
     application.add_handler(conv_handler)
-    application.run_polling()
+    application.run_webhook(
+        listen="0.0.0.0",
+        port=10000,
+        webhook_url=WEBHOOK_URL
+    )
 
 if __name__ == "__main__":
     main()

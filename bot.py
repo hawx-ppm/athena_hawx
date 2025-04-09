@@ -62,47 +62,57 @@ def webhook():
 # Configuração e execução principal do bot
 application = Application.builder().token(TOKEN).build()
 
-# Importante: Job de verificação de alertas
-from telegram.ext import JobQueue
-application.job_queue.run_repeating(lambda context: application.create_task(verificar_alertas(context)), interval=60, first=5)
-
-# Configuração do webhook para o Render
-application.run_webhook(
-    listen="0.0.0.0",
-    port=10000,
-    webhook_url=WEBHOOK_URL
-)
-
-
 # 📌 FUNÇÃO PARA VERIFICAR E ENVIAR ALERTAS
 async def verificar_alertas(context: ContextTypes.DEFAULT_TYPE):
     agora = datetime.now()
     for chat_id, lista_alertas in alertas.items():
-        # Criamos uma cópia da lista para evitar problemas ao remover itens durante a iteração
         for alerta in lista_alertas.copy():
             data_alerta = datetime.strptime(alerta["data"], "%d/%m/%Y")
             hora_alerta = datetime.strptime(alerta["hora"], "%H:%M").time()
-
-            # Verifica se a data e hora do alerta são iguais ao momento atual
-            if (
-                data_alerta.date() == agora.date()
-                and hora_alerta.hour == agora.hour
-                and hora_alerta.minute == agora.minute
-            ):
+            if data_alerta.date() == agora.date() and hora_alerta.hour == agora.hour and hora_alerta.minute == agora.minute:
                 mensagem = f"⏰ **Alerta**: {alerta['nome']}\n📅 Data: {alerta['data']}\n🕒 Horário: {alerta['hora']}\n📝 Mensagem: {alerta['mensagem']}"
                 await context.bot.send_message(chat_id=chat_id, text=mensagem)
-
-                # Se o alerta for recorrente, atualiza a data para o próximo dia
                 if alerta["recorrente"]:
                     dias_recorrencia = alerta["dias_recorrencia"]
                     nova_data = (data_alerta + timedelta(days=dias_recorrencia)).strftime("%d/%m/%Y")
                     alerta["data"] = nova_data
                 else:
-                    # Se o alerta não for recorrente, remove-o da lista
                     alertas[chat_id].remove(alerta)
-
-                # Salva as alterações no arquivo JSON
                 salvar_alertas(alertas)
+
+# 🔁 REGISTRO DE COMANDOS E INICIALIZAÇÃO DO BOT
+conv_handler = ConversationHandler(
+    entry_points=[CommandHandler("start", menu_principal)],
+    states={
+        MENU_PRINCIPAL: [CallbackQueryHandler(handle_callbacks)],
+        MENU_ALERTA: [CallbackQueryHandler(handle_callbacks)],
+        NOME_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_nome_alerta)],
+        DATA_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_data_alerta)],
+        MENSAGEM_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_mensagem_alerta)],
+        RECORRENCIA_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_recorrencia_alerta)],
+        DEFINIR_RECORRENCIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_recorrencia)],
+        DEFINIR_HORARIO: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_horario)],
+        DEFINIR_HORARIO_PERSONALIZADO: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_horario_personalizado)],
+        MENU_INFORMACOES: [CallbackQueryHandler(handle_callbacks)],
+    },
+    fallbacks=[CommandHandler("start", menu_principal)],
+)
+
+application.add_handler(conv_handler)
+
+# 🔁 Agenda a verificação dos alertas
+application.job_queue.run_repeating(
+    lambda context: application.create_task(verificar_alertas(context)),
+    interval=60,
+    first=5
+)
+
+# 🔁 Inicia o webhook para o Render
+application.run_webhook(
+    listen="0.0.0.0",
+    port=10000,
+    webhook_url=WEBHOOK_URL
+)
 
 # 📌 MENU PRINCIPAL
 async def menu_principal(update: Update, context: ContextTypes.DEFAULT_TYPE):

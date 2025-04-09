@@ -100,7 +100,6 @@ async def menu_principal(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # 📌 ATUALIZAÇÃO DO HANDLE_CALLBACKS
 async def handle_callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query.data
-
     if query == "menu_alerta":
         return await menu_alerta(update, context)
     elif query == "criar_alerta":
@@ -159,26 +158,6 @@ async def handle_callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return await banda_musicas(update, context)
         elif query == "banda_setlist":
             return await banda_setlist(update, context)
-
-# 🔁 REGISTRO DE COMANDOS E INICIALIZAÇÃO DO BOT
-conv_handler = ConversationHandler(
-    entry_points=[CommandHandler("start", menu_principal)],
-    states={
-        MENU_PRINCIPAL: [CallbackQueryHandler(handle_callbacks)],
-        MENU_ALERTA: [CallbackQueryHandler(handle_callbacks)],
-        NOME_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_nome_alerta)],
-        DATA_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_data_alerta)],
-        MENSAGEM_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_mensagem_alerta)],
-        RECORRENCIA_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_recorrencia_alerta)],
-        DEFINIR_RECORRENCIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_recorrencia)],
-        DEFINIR_HORARIO: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_horario)],
-        DEFINIR_HORARIO_PERSONALIZADO: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_horario_personalizado)],
-        MENU_INFORMACOES: [CallbackQueryHandler(handle_callbacks)],
-    },
-    fallbacks=[CommandHandler("start", menu_principal)],
-)
-
-application.add_handler(conv_handler)
 
 # 🔁 Agenda a verificação dos alertas
 application.job_queue.run_repeating(
@@ -779,6 +758,25 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# 🔁 REGISTRO DE COMANDOS E INICIALIZAÇÃO DO BOT
+conv_handler = ConversationHandler(
+    entry_points=[CommandHandler("start", menu_principal)],
+    states={
+        MENU_PRINCIPAL: [CallbackQueryHandler(handle_callbacks)],
+        MENU_ALERTA: [CallbackQueryHandler(handle_callbacks)],
+        NOME_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_nome_alerta)],
+        DATA_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_data_alerta)],
+        MENSAGEM_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_mensagem_alerta)],
+        RECORRENCIA_ALERTA: [MessageHandler(filters.TEXT & ~filters.COMMAND, processar_recorrencia_alerta)],
+        DEFINIR_RECORRENCIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_recorrencia)],
+        DEFINIR_HORARIO: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_horario)],
+        DEFINIR_HORARIO_PERSONALIZADO: [MessageHandler(filters.TEXT & ~filters.COMMAND, definir_horario_personalizado)],
+        MENU_INFORMACOES: [CallbackQueryHandler(handle_callbacks)],
+    },
+    fallbacks=[CommandHandler("start", menu_principal)],
+)
+application.add_handler(conv_handler)
 
 # ===== NOVO CÓDIGO PARA HEALTH CHECK =====
 def run_flask_app():

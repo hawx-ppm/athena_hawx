@@ -14,9 +14,9 @@ from flask import Flask
 import os
 
 # Configurações
-TOKEN = config("6660083240:AAHUat12WWo72D9PZw_d2E6RpSK1QTlKHM4")
-PORT = int(config("PORT", 5000))
-APP_NAME = config("APP_NAME", "")  # Para webhook (opcional)
+TOKEN = os.getenv('TELEGRAM_TOKEN')  # ← Usando os.getenv()
+PORT = int(os.getenv('PORT', '5000'))
+DB_PATH = os.path.join(os.path.dirname(__file__), 'data.db')
 
 # Configuração do logging
 logging.basicConfig(

@@ -96,6 +96,69 @@ async def menu_principal(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.callback_query.answer()
 
     return MENU_PRINCIPAL
+    
+# 📌 ATUALIZAÇÃO DO HANDLE_CALLBACKS
+async def handle_callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query.data
+
+    if query == "menu_alerta":
+        return await menu_alerta(update, context)
+    elif query == "criar_alerta":
+        return await criar_alerta(update, context)
+    elif query == "consultar_alerta":
+        return await consultar_alertas(update, context)
+    elif query == "voltar_menu":
+        return await menu_principal(update, context)
+    elif query.startswith("ver_alerta_"):
+        return await ver_alerta(update, context)
+    elif query.startswith("excluir_alerta_"):
+        return await excluir_alerta(update, context)
+    elif query == "menu_informacoes":
+        return await menu_informacoes(update, context)
+    elif query == "habilidades_iniciais":
+        return await habilidades_iniciais(update, context)
+    elif query.startswith("genero_"):
+        return await escolher_genero(update, context)
+    elif query.startswith("funcao_principal_"):
+        return await escolher_funcao_principal(update, context)
+    elif query.startswith("funcao_secundaria_"):
+        return await escolher_funcao_secundaria(update, context)
+    elif query == "eventos_genero":
+        return await eventos_genero(update, context)
+    elif query.startswith("evento_genero_"):
+        return await escolher_evento_genero(update, context)
+    elif query.startswith("ver_evento_"):
+        return await ver_detalhes_evento(update, context)
+    elif query == "menu_atributos":
+        return await menu_atributos(update, context)
+    elif query == "menu_saude_humor":
+        return await menu_saude_humor(update, context)
+    elif query == "menu_lancamentos":
+        return await menu_lancamentos(update, context)
+    elif query.startswith("lancamentos_"):
+        if query == "lancamentos_gravacoes":
+            return await lancamentos_gravacoes(update, context)
+        elif query == "lancamentos_single":
+            return await lancamentos_single(update, context)
+        elif query == "lancamentos_full":
+            return await lancamentos_full(update, context)
+        elif query == "lancamentos_festa":
+            return await lancamentos_festa(update, context)
+        elif query == "lancamentos_clipe":
+            return await lancamentos_clipe(update, context)
+    elif query == "menu_banda":
+        return await menu_banda(update, context)
+    elif query.startswith("banda_"):
+        if query == "banda_shows":
+            return await banda_shows(update, context)
+        elif query == "banda_turne":
+            return await banda_turne(update, context)
+        elif query == "banda_repertorio":
+            return await banda_repertorio(update, context)
+        elif query == "banda_musicas":
+            return await banda_musicas(update, context)
+        elif query == "banda_setlist":
+            return await banda_setlist(update, context)
 
 # 🔁 REGISTRO DE COMANDOS E INICIALIZAÇÃO DO BOT
 conv_handler = ConversationHandler(
@@ -671,68 +734,6 @@ async def menu_informacoes(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     return MENU_INFORMACOES
 
-# 📌 ATUALIZAÇÃO DO HANDLE_CALLBACKS
-async def handle_callbacks(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query.data
-
-    if query == "menu_alerta":
-        return await menu_alerta(update, context)
-    elif query == "criar_alerta":
-        return await criar_alerta(update, context)
-    elif query == "consultar_alerta":
-        return await consultar_alertas(update, context)
-    elif query == "voltar_menu":
-        return await menu_principal(update, context)
-    elif query.startswith("ver_alerta_"):
-        return await ver_alerta(update, context)
-    elif query.startswith("excluir_alerta_"):
-        return await excluir_alerta(update, context)
-    elif query == "menu_informacoes":
-        return await menu_informacoes(update, context)
-    elif query == "habilidades_iniciais":
-        return await habilidades_iniciais(update, context)
-    elif query.startswith("genero_"):
-        return await escolher_genero(update, context)
-    elif query.startswith("funcao_principal_"):
-        return await escolher_funcao_principal(update, context)
-    elif query.startswith("funcao_secundaria_"):
-        return await escolher_funcao_secundaria(update, context)
-    elif query == "eventos_genero":
-        return await eventos_genero(update, context)
-    elif query.startswith("evento_genero_"):
-        return await escolher_evento_genero(update, context)
-    elif query.startswith("ver_evento_"):
-        return await ver_detalhes_evento(update, context)
-    elif query == "menu_atributos":
-        return await menu_atributos(update, context)
-    elif query == "menu_saude_humor":
-        return await menu_saude_humor(update, context)
-    elif query == "menu_lancamentos":
-        return await menu_lancamentos(update, context)
-    elif query.startswith("lancamentos_"):
-        if query == "lancamentos_gravacoes":
-            return await lancamentos_gravacoes(update, context)
-        elif query == "lancamentos_single":
-            return await lancamentos_single(update, context)
-        elif query == "lancamentos_full":
-            return await lancamentos_full(update, context)
-        elif query == "lancamentos_festa":
-            return await lancamentos_festa(update, context)
-        elif query == "lancamentos_clipe":
-            return await lancamentos_clipe(update, context)
-    elif query == "menu_banda":
-        return await menu_banda(update, context)
-    elif query.startswith("banda_"):
-        if query == "banda_shows":
-            return await banda_shows(update, context)
-        elif query == "banda_turne":
-            return await banda_turne(update, context)
-        elif query == "banda_repertorio":
-            return await banda_repertorio(update, context)
-        elif query == "banda_musicas":
-            return await banda_musicas(update, context)
-        elif query == "banda_setlist":
-            return await banda_setlist(update, context)
 
 # 📌 CONFIGURAÇÃO DO BOT
 def main() -> None:

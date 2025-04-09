@@ -1,4 +1,6 @@
 import logging
+import json 
+from pathlib import Path  
 from telegram import Update
 from telegram.ext import (
     Application,
@@ -17,6 +19,17 @@ import os
 TOKEN = os.getenv('TELEGRAM_TOKEN')  # ← Usando os.getenv()
 PORT = int(os.getenv('PORT', '5000'))
 DB_PATH = os.path.join(os.path.dirname(__file__), 'data.db')
+ALERTAS_FILE = 'alertas.json'
+
+def carregar_alertas():
+    try:
+        if Path(ALERTAS_FILE).exists():
+            with open(ALERTAS_FILE, 'r') as f:
+                return json.load(f)
+        return {}
+    except Exception as e:
+        logging.error(f"Erro ao carregar alertas: {e}")
+        return {}
 
 # Configuração do logging
 logging.basicConfig(

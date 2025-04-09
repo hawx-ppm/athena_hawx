@@ -1,0 +1,1630 @@
+{
+    "eventos de palco": [
+      {
+        "genero": "Genérico",
+        "eventos": [
+          {
+            "evento": "TURBINAR o humor da plateia",
+            "atributos": [],
+            "habilidades": []
+          },
+          {
+            "evento": "Trazer um convidado para o palco",
+            "atributos": [],
+            "habilidades": []
+          },
+          {
+            "evento": "Arregaçar o volume",
+            "atributos": [],
+            "habilidades": []
+          },
+          {
+            "evento": "Dedicar a próxima música para alguém",
+            "atributos": [],
+            "habilidades": [
+              "Charme",
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Dedicar a próxima música à pessoa amada",
+            "atributos": [],
+            "habilidades": [
+              "Charme",
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Encher o palco com fumaça",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Básico de Efeitos Especiais",
+              "Efeitos pirotécnicos avançados"
+            ]
+          },
+          {
+            "evento": "Saudar o público",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Sair do palco",
+            "atributos": [],
+            "habilidades": []
+          },
+          {
+            "evento": "Incentivar a multidão a cantar junto",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Técnicas de Canto"
+            ]
+          },
+          {
+            "evento": "Fazer uma dança no palco",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Fazer um solo instrumental",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Composição de Melodias",
+              "Improvisação musical"
+            ]
+          },
+          {
+            "evento": "Elogiar a beleza da cidade",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Elogiar a plateia",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Mar de luzes",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Liderança Básica"
+            ]
+          },
+          {
+            "evento": "Fazer um show de luzes",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Básico de efeitos especiais",
+              "Técnicas de iluminação"
+            ]
+          },
+          {
+            "evento": "Soltar fogos de artifício no palco",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Básico de efeitos especiais",
+              "Efeitos pirotécnicos avançados"
+            ]
+          },
+          {
+            "evento": "Cumprimentar a plateia",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Dar um amasso com alguém no palco",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sexo",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Entrada espetacular",
+            "atributos": [],
+            "habilidades": []
+          },
+          {
+            "evento": "Fazer uma pose",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Modelo",
+              "Atuação"
+            ]
+          },
+          {
+            "evento": "Tirar algumas roupas",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Dança erótica"
+            ]
+          },
+          {
+            "evento": "Falar com a plateia",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Afinar os instrumentos",
+            "atributos": [],
+            "habilidades": []
+          },
+          {
+            "evento": "Gritar mensagem",
+            "atributos": [],
+            "habilidades": []
+          }
+        ]
+      },
+      {
+        "genero": "Música Africana",
+        "eventos": [
+          {
+            "evento": "Trazer um leão ao palco",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Adestramento de animais",
+              "Presença de palco"
+            ]
+          },
+          {
+            "evento": "Dançar Moribayasa",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Dança",
+              "Fashion"
+            ]
+          },
+          {
+            "evento": "Batidas da paixão",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Instrumentos de percussão",
+              "Tambor africano"
+            ]
+          },
+          {
+            "evento": "Dança do pulo Masai",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Dança popular",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Capella ao estilo Mbube",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Técnicas de Canto",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Discursar contra o racismo",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Liderança básica",
+              "Retórica Profissional"
+            ]
+          },
+          {
+            "evento": "Contar um mito Bushongo",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "História antiga",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Dança Tribal",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Dança popular"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Blues",
+        "eventos": [
+          {
+            "evento": "Demônios do Blues",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Boogie woogie jam",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Afogar os problemas em álcool",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Festejar a noite toda",
+              "Hábito de beber apropriadamente"
+            ]
+          },
+          {
+            "evento": "Tocar com as mãos do diabo",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Ritual de invocação",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Colocar seus óculos escuros",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Tocar violão usando um copo de shot",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Instrumentos de corda",
+              "Improvisação musical"
+            ]
+          },
+          {
+            "evento": "Falar sobre seu passado doloroso",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Contar a história do blues",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Retórica",
+              "Consciência do Público"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Música Clássica",
+        "eventos": [
+          {
+            "evento": "Reverenciar o público",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Etiqueta",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Explicar a sua próxima composição",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Etiqueta",
+              "Composição de Melodias"
+            ]
+          },
+          {
+            "evento": "Apresentar o compositor",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Etiqueta profissional",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Cumprimentar o maestro",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Etiqueta",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Foco no solista",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "O quebrador de vidros",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Vocal Principal",
+              "Segunda voz"
+            ]
+          },
+          {
+            "evento": "Aquecer os dedos",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Solo de violino",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Violino",
+              "Improvisação musical"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Country & Western",
+        "eventos": [
+          {
+            "evento": "Mascar tabaco",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Botânica básica"
+            ]
+          },
+          {
+            "evento": "Estalar o chicote",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Adestramento de animais"
+            ]
+          },
+          {
+            "evento": "Duelo de banjos",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Banjo",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Cavaleiro High-Tech",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Adestramento de animais"
+            ]
+          },
+          {
+            "evento": "Atirar com o três-oitão",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Básico sobre armas de fogo"
+            ]
+          },
+          {
+            "evento": "Dança com passos marcados",
+            "atributos": [
+              "Musicalidade"
+            ],
+            "habilidades": [
+              "Dança",
+              "Liderança básica"
+            ]
+          },
+          {
+            "evento": "Contar um conto do coração solitário",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Ajeitar o chapéu",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Modelo",
+              "Sensualidade"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Eletrônica",
+        "eventos": [
+          {
+            "evento": "Fazer o Robot",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Dança",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Entrar no cyber espaço",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Informática",
+              "Básico de efeitos especiais"
+            ]
+          },
+          {
+            "evento": "Festa da espuma",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Festejar a noite toda"
+            ]
+          },
+          {
+            "evento": "Remix GOA",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Composição de melodias",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Tocar algum som ambiente",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Improvisação Musical",
+              "Básico de efeitos especiais"
+            ]
+          },
+          {
+            "evento": "Tocar música antiga de vídeo game",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Informática",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Realizar um show de lasers",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Técnicas de iluminação",
+              "Básico de artes e design"
+            ]
+          },
+          {
+            "evento": "Pirar com o estrobo",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Técnicas de iluminação",
+              "Consciência do Público"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Flamenco",
+        "eventos": [
+          {
+            "evento": "Crowd of Palmeros",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Instrumentos de percussão",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Dançar a farruca",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Dançar com castanholas",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Instrumentos de percussão",
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Improvisar 'a palo seco'",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Vocal principal",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Tocar violão flamenco",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Violão",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Relembrar os maestros",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Retórica"
+            ]
+          },
+          {
+            "evento": "Rasgar sua camisa",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Taconeo Flamenco",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Dança profissional",
+              "Presença de palco profissional"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Heavy Metal",
+        "eventos": [
+          {
+            "evento": "Chuva de sangue!",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Maquiagem",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Soprar fogo",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Cuspir fogo"
+            ]
+          },
+          {
+            "evento": "Matar um bode no palco",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Medicina",
+              "Medicina veterinária"
+            ]
+          },
+          {
+            "evento": "Monstro gigante no palco",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Básico de efeitos especiais",
+              "Atuação"
+            ]
+          },
+          {
+            "evento": "Headbang",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Quebrar um instrumento no palco",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Invocar Demônio",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Religião",
+              "Ritual de invocação"
+            ]
+          },
+          {
+            "evento": "Paredão da morte",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Consciência do Público",
+              "Presença de palco profissional"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Hip Hop",
+        "eventos": [
+          {
+            "evento": "Beatbox",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Técnicas de canto",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Breakdance",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Dança",
+              "Dançando break"
+            ]
+          },
+          {
+            "evento": "Improvisar uma rima",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Básico de letras",
+              "Rap básico"
+            ]
+          },
+          {
+            "evento": "Homenagem aos companheiros falecidos",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Sobrevivendo nas ruas"
+            ]
+          },
+          {
+            "evento": "Get jiggy with it",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Desrespeitar um rival",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Sobrevivendo nas ruas"
+            ]
+          },
+          {
+            "evento": "Fazer um Graffiti",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Arte do graffiti"
+            ]
+          },
+          {
+            "evento": "Balançar a bunda (twerk)",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Dança",
+              "Sensualidade"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Jazz",
+        "eventos": [
+          {
+            "evento": "Celebrar o fim da proibição",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Etiqueta",
+              "Hábito de beber apropriadamente"
+            ]
+          },
+          {
+            "evento": "Se acalmar com um cigarro",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Clamar o trono do jazz",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Improvisação Musical",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Escalar um piano",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Modelo"
+            ]
+          },
+          {
+            "evento": "Improvisação de jazz",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Composição de melodias",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Animar um clássico",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Compondo músicas para músicos",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Prestar tributo à Peggy Lee",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Contar piadas",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Fazer scat",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Vocal principal",
+              "Improvisação Musical"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Música Latina",
+        "eventos": [
+          {
+            "evento": "Dançar o Botafogo",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Lembrar sobre seu antigo bairro",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Poesia avançada"
+            ]
+          },
+          {
+            "evento": "Gritar ¡Azuuuuucar!",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Presença de Palco",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Rumba espontânea",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Dança profissional",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Começar uma batucada",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Instrumentos de percussão",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Tango de la Muerte",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Dança profissional",
+              "Sexo tântrico"
+            ]
+          },
+          {
+            "evento": "Jogar rosas para o público",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Desabotoar sua camisa",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Sensualidade"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Modern Rock",
+        "eventos": [
+          {
+            "evento": "Crowdsurf",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Pular do palco",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Virar para a banda",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Improvisação Musical"
+            ]
+          },
+          {
+            "evento": "Derrubar o equipamento de palco",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Festejar a noite toda"
+            ]
+          },
+          {
+            "evento": "Botar pra quebrar",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Incentivar uma rodinha",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Liderança básica"
+            ]
+          },
+          {
+            "evento": "Dividir pensamentos com a plateia",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Retórica",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Dar um stagedive de cima dos alto-falantes",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Pular do palco",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Jogar instrumento para cima",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Presença de palco profissional"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Pop",
+        "eventos": [
+          {
+            "evento": "Acidentalmente mostrar o mamilo",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Atuação",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Trocar de roupa",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Fashion"
+            ]
+          },
+          {
+            "evento": "Montar numa bola de demolição",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Dança erótica",
+              "Festejar a noite toda"
+            ]
+          },
+          {
+            "evento": "Flertar com a plateia",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Desfile"
+            ]
+          },
+          {
+            "evento": "Fazer o crotch grab de Michael Jackson",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Dança",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Dar uns pegas em um fã no palco",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Consciência do Público",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Moonwalk",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Dança",
+              "Moonwalking"
+            ]
+          },
+          {
+            "evento": "Sentar na beirada do palco",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Modelo",
+              "Sensualidade"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Punk Rock",
+        "eventos": [
+          {
+            "evento": "Queimar uma bandeira",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Retórica",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Se expor",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Modelo"
+            ]
+          },
+          {
+            "evento": "Lua cheia",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Consciência do Público",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Gritar slogans políticos",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Liderança básica",
+              "Retórica profissional"
+            ]
+          },
+          {
+            "evento": "Cuspir na plateia",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Encenar uma luta",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Atuação",
+              "Luta com punhos"
+            ]
+          },
+          {
+            "evento": "Mandar a plateia ir se danar",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Etiqueta",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Jogar itens na plateia",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Etiqueta",
+              "Consciência do Público"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Rhythm & Blues",
+        "eventos": [
+          {
+            "evento": "Jogar bolhas no ar",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Básico de efeitos especiais"
+            ]
+          },
+          {
+            "evento": "Desfilar pelo palco",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Desfile"
+            ]
+          },
+          {
+            "evento": "Beber um coquetel",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Etiqueta",
+              "Festejar a noite toda"
+            ]
+          },
+          {
+            "evento": "Flertar com um fã",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Atuação"
+            ]
+          },
+          {
+            "evento": "Prestar homenagem às lendas",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Composição de melodias",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Grito poderoso",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Técnicas de Canto",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Dividir uma perda pessoal com a multidão",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Atuação",
+              "Retórica"
+            ]
+          },
+          {
+            "evento": "O hucklebuck",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Dança",
+              "Sensualidade"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Reggae",
+        "eventos": [
+          {
+            "evento": "Pretos e brancos, uni-vos!",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Consciência do Público",
+              "Política básica"
+            ]
+          },
+          {
+            "evento": "Legalize!",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Retórica",
+              "Botânica básica"
+            ]
+          },
+          {
+            "evento": "Fazer o público dançar skank",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Dança",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "PRomaover a liberação social",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Retórica profissional",
+              "Liderança básica"
+            ]
+          },
+          {
+            "evento": "Espalhar o amor",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Liderança básica",
+              "Sexo"
+            ]
+          },
+          {
+            "evento": "Balançar os dreads",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Fazer uma pausa e relaxar",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Festejar a noite toda",
+              "Botânica básica"
+            ]
+          },
+          {
+            "evento": "Toast no ritmo",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Técnicas de Canto",
+              "Presença de palco profissional"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "Rock",
+        "eventos": [
+          {
+            "evento": "Subir na bateria",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Beber cerveja",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Hábito de beber apropriadamente",
+              "Festejar a noite toda"
+            ]
+          },
+          {
+            "evento": "Duckwalk",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Instrumentos de corda",
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Tacar fogo no instrumento",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Básico de efeitos especiais"
+            ]
+          },
+          {
+            "evento": "Deslizar de joelhos",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Dança"
+            ]
+          },
+          {
+            "evento": "Pular do palco",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Pular do palco",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Protestar contra os Grandes",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Presença de palco profissional",
+              "Liderança básica"
+            ]
+          },
+          {
+            "evento": "Girar o pedestal do microfone",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Sensualidade",
+              "Vocal principal"
+            ]
+          }
+        ]
+      },
+      {
+        "genero": "World Music",
+        "eventos": [
+          {
+            "evento": "Dança do ventre",
+            "atributos": [
+              "Visual"
+            ],
+            "habilidades": [
+              "Dança erótica",
+              "Sensualidade"
+            ]
+          },
+          {
+            "evento": "Dança regional",
+            "atributos": [
+              "Saúde"
+            ],
+            "habilidades": [
+              "Dança",
+              "Dança popular"
+            ]
+          },
+          {
+            "evento": "Fazer dança da chuva",
+            "atributos": [
+              "Talento Musical"
+            ],
+            "habilidades": [
+              "Dança",
+              "Presença de palco profissional"
+            ]
+          },
+          {
+            "evento": "Adorar a mãe natureza",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Religião",
+              "Retórica"
+            ]
+          },
+          {
+            "evento": "Soltar pombos brancos",
+            "atributos": [
+              "Inteligência"
+            ],
+            "habilidades": [
+              "Básico de efeitos especiais"
+            ]
+          },
+          {
+            "evento": "Cantar o hino nacional do país",
+            "atributos": [
+              "Vocal"
+            ],
+            "habilidades": [
+              "Técnicas de Canto",
+              "Etiqueta"
+            ]
+          },
+          {
+            "evento": "Fazer bolinhas",
+            "atributos": [
+              "Humor"
+            ],
+            "habilidades": [
+              "Didgeridoo",
+              "Consciência do Público"
+            ]
+          },
+          {
+            "evento": "Toque de espírito",
+            "atributos": [
+              "Charme"
+            ],
+            "habilidades": [
+              "Básico de letras",
+              "Consciência do Público"
+            ]
+          }
+        ]
+      }
+    ]
+  }

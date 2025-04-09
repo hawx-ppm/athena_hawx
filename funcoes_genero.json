@@ -1,0 +1,269 @@
+{
+    "funcoes": [
+      {
+        "funcao": "Acordeonista",
+        "habilidades": [
+          "Instrumento de Tecla",
+          "Acordeão"
+        ]
+      },
+      {
+        "funcao": "Baixista",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Baixo"
+        ]
+      },
+      {
+        "funcao": "Bandolinista",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Bandolim"
+        ]
+      },
+      {
+        "funcao": "Baterista",
+        "habilidades": [
+          "Instrumentos de percussão",
+          "Bateria"
+        ]
+      },
+      {
+        "funcao": "Clarinetista",
+        "habilidades": [
+          "Instrumentos de sopro de madeira",
+          "Clarinete"
+        ]
+      },
+      {
+        "funcao": "Contrabaixista",
+        "habilidades": [
+          "Instrumentos de corda",
+          "Contrabaixo"
+        ]
+      },
+      {
+        "funcao": "Cravista",
+        "habilidades": []
+      },
+      {
+        "funcao": "Dançarino(a)",
+        "habilidades": [
+          "Dança",
+          "Dança Profissional"
+        ]
+      },
+      {
+        "funcao": "DJ",
+        "habilidades": [
+          "Básico de instrumentos eletrônicos",
+          "Técnicas avançadas de DJ"
+        ]
+      },
+      {
+        "funcao": "Flautista",
+        "habilidades": [
+          "Instrumentos de sopro de madeira",
+          "Flauta"
+        ]
+      },
+      {
+        "funcao": "Gaitista",
+        "habilidades": [
+          "Instrumentos de sopro de madeira",
+          "Gaita"
+        ]
+      },
+      {
+        "funcao": "Guitarrista",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Guitarra"
+        ]
+      },
+      {
+        "funcao": "Harpista",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Harpa"
+        ]
+      },
+      {
+        "funcao": "Pianista",
+        "habilidades": [
+          "Instrumento de Tecla",
+          "Piano"
+        ]
+      },
+      {
+        "funcao": "Rapper",
+        "habilidades": [
+          "Tecnicas de Canto",
+          "Rap básico"
+        ]
+      },
+      {
+        "funcao": "Saxofonista",
+        "habilidades": [
+          "Instrumentos de sopro de madeira",
+          "Saxofone"
+        ]
+      },
+      {
+        "funcao": "Segunda Voz",
+        "habilidades": [
+          "Tecnicas de Canto",
+          "Segunda Voz"
+        ]
+      },
+      {
+        "funcao": "Tecladista",
+        "habilidades": [
+          "Instrumento de Tecla",
+          "Teclado"
+        ]
+      },
+      {
+        "funcao": "Tocador de Alaúde",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Alaúde"
+        ]
+      },
+      {
+        "funcao": "Tocador de Didgeridoo",
+        "habilidades": []
+      },
+      {
+        "funcao": "Tocador de Dobro",
+        "habilidades": [
+          "Instrumentos de corda",
+          "Dobro"
+        ]
+      },
+      {
+        "funcao": "Tocador de Dulcimer",
+        "habilidades": [
+          "Instrumentos de corda",
+          "Dulcimer"
+        ]
+      },
+      {
+        "funcao": "Tocaror de Flauta de Pã",
+        "habilidades": [
+          "Instrumentos de sopro de madeira",
+          "Flauta de Pã"
+        ]
+      },
+      {
+        "funcao": "Tocador de Gaita de Foles",
+        "habilidades": [
+          "Instrumentos de sopro de madeira",
+          "Gaita de Foles"
+        ]
+      },
+      {
+        "funcao": "Tocador de Oboé",
+        "habilidades": [
+          "Instrumentos de sopro de madeira",
+          "Oboé"
+        ]
+      },
+      {
+        "funcao": "Tocador de Pau Elétrico",
+        "habilidades": [
+          "Instrumentos de corda",
+          "Pau Elétrico"
+        ]
+      },
+      {
+        "funcao": "Tocador de Tambor Africano",
+        "habilidades": [
+          "Instrumentos de percussão",
+          "Tambor Africano"
+        ]
+      },
+      {
+        "funcao": "Tocador de Tuba",
+        "habilidades": [
+          "Instrumentos de sopro de metal",
+          "Tuba"
+        ]
+      },
+      {
+        "funcao": "Tocador de Ukulele",
+        "habilidades": [
+          "Instrumentos de corda",
+          "Ukulele"
+        ]
+      },
+      {
+        "funcao": "Trombonista",
+        "habilidades": [
+          "Instrumentos de sopro de metal",
+          "Trombone"
+        ]
+      },
+      {
+        "funcao": "Trompetista",
+        "habilidades": [
+          "Instrumentos de sopro de metal",
+          "Trompete"
+        ]
+      },
+      {
+        "funcao": "Violinista",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Violino"
+        ]
+      },
+      {
+        "funcao": "Violoncelista",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Violoncelo"
+        ]
+      },
+      {
+        "funcao": "Violonista",
+        "habilidades": [
+          "Instrumento de Cordas",
+          "Violão"
+        ]
+      },
+      {
+        "funcao": "Vocalista",
+        "habilidades": [
+          "Tecnicas de Canto",
+          "Vocal Principal"
+        ]
+      },
+      {
+        "funcao": "Xilofonista",
+        "habilidades": [
+          "Instrumentos de percussão",
+          "Xilofone"
+        ]
+      }
+    ],
+    "generos_musicais": [
+      "Música Africana",
+      "Blues",
+      "Música Clássica",
+      "Country & Western",
+      "Eletrônica",
+      "Flamenco",
+      "Heavy Metal",
+      "Hip Hop",
+      "Jazz",
+      "Música Latina",
+      "Modern Rock",
+      "Pop",
+      "Punk Rock",
+      "Rhythm & Blues",
+      "Reggae",
+      "Rock",
+      "World Music"
+    ]
+  }
